@@ -8,6 +8,6 @@ if (-not (Test-Path $input)) {
     exit 1
 }
 
-Get-Content $input | dotnet run --project $project --no-build
+Get-Content $input | dotnet run --project $project
 
 Write-Host "`nDone!" -ForegroundColor Green
