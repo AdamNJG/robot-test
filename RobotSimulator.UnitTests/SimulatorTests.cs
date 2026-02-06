@@ -107,10 +107,10 @@ public class SimulatorTests
     }
 
     [Theory]
-    [InlineData("PLACE A,B,NORTH")] // Non-integer coordinates
-    [InlineData("PLACE 0,0,INVALID")] // Invalid direction
-    [InlineData("PLACE 0,0")] // Missing direction
-    [InlineData("PLACE 0,0,NORTH,EXTRA")] // Too many parts
+    [InlineData("PLACE A,B,NORTH")]
+    [InlineData("PLACE 0,0,INVALID")]
+    [InlineData("PLACE 0,0")]
+    [InlineData("PLACE 0,0,NORTH,EXTRA")]
     public void InvalidPlaceCommands_ShouldBeIgnored(string invalidPlaceCommand)
     {
         string[] commands = [invalidPlaceCommand, "MOVE", "REPORT"];

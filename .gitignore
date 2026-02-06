@@ -2,3 +2,6 @@
 RobotSimulator/bin
 RobotSimulator/obj
 RobotSimulator.AcceptanceTests/bin
+RobotSimulator.AcceptanceTests/obj
+RobotSimulator.UnitTests/bin
+RobotSimulator.UnitTests/obj
